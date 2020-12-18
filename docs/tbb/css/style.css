@@ -1,0 +1,54 @@
+/* Universal Tags */
+
+body {
+   margin:0;
+   padding: 0;
+   font-family: 'Roboto', serif;
+   text-align:center;
+}
+
+#logo { 
+  float: left;
+  display: inline-block;
+}
+
+.clear {
+  clear: both;
+}
+
+
+#nav {
+    background-color: gray;
+    color: white;
+    width: 100%;
+
+}
+.nav {
+  float: right;
+  list-style: none;   
+    text-align: left;
+  margin: 0;
+}
+.nav > li {                                                             
+    display:Inline-block;
+    padding: 10px 9px 10px 9px;                             
+}
+
+ .nav > li a {                                               
+     text-decoration: none;
+     color: black;
+     font-size: 14px;
+     padding: 5px 0px 5px 0px
+ }
+
+ .nav > li > a:hover {
+     color: white;*/
+ }
+
+ #main-footer{
+  background:#333;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
