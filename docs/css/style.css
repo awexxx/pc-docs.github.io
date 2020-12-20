@@ -56,3 +56,20 @@ body {
 hr{
   width:50%;
 }
+
+.center{
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width:20%;
+  padding-top:10px 10px;
+}
+
+a{
+  color:gray;
+}
+
+#hr-footer{
+  width:20%;
+  padding-top:3px 5px;
+}
