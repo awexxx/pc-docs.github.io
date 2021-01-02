@@ -188,7 +188,7 @@
 
     let text = urlParams.get('text');
 
-        if (text == null || text == "") {
+        if (text == null || text == "medalsmp") {
             text = "medalsmp"
         }
 
@@ -267,7 +267,7 @@
                     existingOffset += 1; // increase offset by 1 to keep going down existing feed
 
 
-                    fetch(`https://developers.medal.tv/v1/search?muted=1&height=400&width=560&limit=1&autoplay=1&muted=1&offset=${existingOffset}&text=${text}`, {
+                    fetch(`https://developers.medal.tv/v1/search?muted=1&height=400&width=560&limit=1&autoplay=1&muted=1&offset=${existingOffset}&text=medalsmp`, {
                         headers: {
                             'Authorization': PUBLIC_API_KEY
                         }
@@ -294,7 +294,7 @@
     function checkForLatest() {
 
         setInterval(function () {
-            fetch(`https://developers.medal.tv/v1/search?muted=1&height=400&width=560&limit=1&muted=1&autoplay=1&text=${text}`, {
+            fetch(`https://developers.medal.tv/v1/search?muted=1&height=400&width=560&limit=1&muted=1&autoplay=1&text=medalsmp`, {
                 headers: {
                     'Authorization': PUBLIC_API_KEY
                 }
@@ -321,7 +321,7 @@
     function checkForExisting() {
 
         setInterval(function () {
-            fetch(`https://developers.medal.tv/v1/search?muted=1&height=400&width=560&muted=1&limit=1&autoplay=1&text=${text}`, {
+            fetch(`https://developers.medal.tv/v1/search?muted=1&height=400&width=560&muted=1&limit=1&autoplay=1&text=medalsmp`, {
                 headers: {
                     'Authorization': PUBLIC_API_KEY
                 }
@@ -341,7 +341,7 @@
     /**
      * Initial population of the latest clips
      */
-    fetch(`https://developers.medal.tv/v1/search?muted=1&height=400&width=560&muted=1&limit=3&o&autoplay=1&text=${text}`, {
+    fetch(`https://developers.medal.tv/v1/search?muted=1&height=400&width=560&muted=1&limit=3&o&autoplay=1&text=medalsmp`, {
         headers: {
             'Authorization': PUBLIC_API_KEY
         }
@@ -359,7 +359,7 @@
     /**
      * Initial population of existing clips.
      */
-    fetch(`https://developers.medal.tv/v1/search?muted=1&height=400&width=560&muted=1&offset=3&limit=3&autoplay=1&text=${text}`, {
+    fetch(`https://developers.medal.tv/v1/search?muted=1&height=400&width=560&muted=1&offset=3&limit=3&autoplay=1&text=medalsmp`, {
         headers: {
             'Authorization': PUBLIC_API_KEY
         }
