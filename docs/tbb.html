@@ -11,7 +11,6 @@
    <ul class="nav">
       <li><a href="https://docs.plaguecraft.xyz">HOME</a></li>
       <li><a href="#">THEBOYSBOT</a></li>
-      <li><a href="fgsmp">FORESTGROVESMP</a></li>
       <li><a href="medal/smp">MEDALSMP</a></li>
       <li><a href="https://plaguecraft.xyz">PLAYPLAGUECRAFT</a></li>
    </ul>
@@ -24,54 +23,83 @@
  <p>This bot was developed as a revamp to a private server.</p>
  <hr>
  <h2>How this bot was built</h2>
-  <p>This bot was built with Discord Bot Studio from Steam. It currently is a node studio that, with the connecting of nodes, you can code bots.<br>
-  While limited, there are other ways we counter all the limitations. They offer a wide range of mods to make implementing certain commands easier.</p>
-
-<img src="images/tbb/bot-studio.png">
+  <p>This bot was built with the <a href="https://github.com/Cog-Creators/Red-DiscordBot" target="_blank">Red Discord Bot</a> API. It currently is a node studio that, with "cogs" from git repositories, you can add different functions to your bot.<br>
+Red Discord Bot is an easy way to make a bot, especially for free!</p>
 
 <hr>
   
   <h2>How this bot is hosted 24/7</h2>
-    <p>TheBoysBot is hosted on a Heroku server via a Git repository. It auto-deploys when we update using a webhook and without worry of issues.</p>
-
-    <img src="images/tbb/heroku.png">
+    <p>TheBoysBot is hosted on our local server. It auto-deploys when we update using a webhook and without worry of issues.</p>
 
 <hr>
   <section id="commands">
-  <h2>Bot Commands</h2>
+  <h2>Bot Commands (Prefix = -)</h2>
     <p>Bot commands are listed below.</p>
 
-  <p>?help - Directs you here lmao<br>
-    ?ping - Shows current bot ping<br>
-    ?dev-link - Shows private bot invite link<br>
-    ?info - Displays Server Information<br>
-    ?madi-awex - Best couple. Ever.<br>
-    ?nathan-demi - THE ULTRA COUPLE BRO WTF<br>
-    ?badbot - Conveniently makes the bot dislike you.<br>
-    ?goodbot - Reverses actions of badbot.<br>
-    ?madi - HOTHOTHOTHOTHOTHOTHOHTOHTOTHOHTOHTHOTHOTHOHO<br>
-    ?docs - Links you here as well lmao<br>
-    ?ut - Displays bot uptime<br>
-    ?kat - Kinky.<br>
-    ?demi - Yeah.. we all know who Demi is..<br>
-    ?lilly - BAAHAHAHHAHHAHHAAHHAHHH<br>
-    ?sophie - The Normal One<br>
-    ?nathan - Self explanitory.</p>
+      <h3>Commands that are requirements to know</h3>
+  <p>-help - DMs command author (you!) all commands. <span style="color:gray;"><i>Note: This will <strong>not</strong> work if you have DMs from non-friends off.</i></span><br>
+    -netspeed - Shows bot speed from the server<br>
+    -invite - Shows private bot invite link<br>
+    -ping - Pings the bot to send back "Pong." (generally for testing)<br>
+    -uptime - Shows bots current uptime.<br>
+    -invite - Displays bot's oAuth invite. This link will not work for anyone other then the instance owner (which can be found by running -info.)<br>
+    -info - Displays information about the bots environment.</p>
   </section>
-<hr>
-  <section id="christmas">
-    <h2>Christmas-exclusive Commands</h2>
-  <hr>
-  <p>?christmas - does a thing to bot upon reinit (only for devs)<br>
-  ?christmas-help - Brings you here<br>
-  ?secret-santa - Displays the Secret Santa info<br>
-  ?playlist - Displays the link for the playlist below</p>
-  <iframe src="https://open.spotify.com/embed/playlist/6twNxNL5d4D0UXjPP7hHLi" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <section id="music">
+<hr style="width:25%;">
+      <h3>Audio Tools for Music</h3>
+        <h4>We're working on more instances of this audio bot. We'll add more bots soon for multi-streaming!</h4>
+      <p>-play [link/keywords] - Plays a song from YouTube (is capable of playing Spotify as well)<br>
+        -autoplay - Begins autoplay.<br>
+        -bump [track #] - Bumps a track to the top of the queue.<br>
+        -bumpplay - Force play a URL or search for a track.<br>
+        -disconnect - Disconnects the bot from the channel.<br>
+        -eq - Equalizer Management<br>
+        -genre - PIck a Spotify playlist from a list of categories<br>
+        -now - Now playing<br>
+        -pause - Pauses current track<br>
+        -percent - Displays queue percentage.<br>
+        -prev - Plays previous track<br>
+        -queue - Displays song queue<br>
+        -remove [track #] - Remove the specified track number.<br>
+        -repeat - Toggles looping<br>
+        -search - Find a track with Search<br>
+        -seek [time] - Seek ahead in a track by seconds or to a specific time.<br>
+        -shuffle - Toggles shuffle<br>
+        -sing - Make TheBoysBot Sing!<br>
+        -skip - Skips current track<br>
+        -stop - Stops current track and clears queue.<br>
+        -summon - Summons the bot to a VC<br>
+        -volume [1%-150%] - Sets volume</p>
+    </section>
+      <section id="games">
+  <hr style="width:25%;">
+      <h3>Game Tools</h3>
+        <h4>If you'd like more games to play with TBB, feel free to brows <a href="https://index.discord.red/" target="_blank">Red's evergrowing Index</a> of cogs! If you see any you'd like, use -contact to message the owner!</h4>
+          <p>-audiotrivia - Starts an AudioTrivia Game (must be in a VC)<br>
+          -trivia - Starts a Trivia game.<br>
+          -dare - Dares a player<br>
+          -neverhaveiever - Displays a Never Have I Ever question<br>
+          -truth - Ask a truth question<br>
+          -wouldyourather - Displays a Would You Rather question<br>
+          <h4><i>Cards Against Humanity commands can only be ran via DMs with the bot.</i></h4>
+          -cahgames - Displays Cards Against Humanity games in progress.<br>
+          -chat - Broadcasts a message to fellow CAH players.<br>
+          -flushhand - Flushes the cards in your hand<br>
+          -game - Displays the current game status<br>
+          -hand - Shows your hand<br>
+          -joincah - Join a CAH Game<br>
+          -laid - Shows who's laid their cards<br>
+          -lay - Lay your card(s) from your hand<br>
+          -leavecah - Leaves the current game.<br>
+          -newcah - Starts a new Cards Against Humanity game<br>
+          -pick - As the judge - Pick the winning card(s)<br>
+          -score - Displays the current score</p>
 </body>
 
     <footer id="main-footer">
   <p>The PlagueCraft Network Developer Documents
-    <hr style="width:20px;">
+    <hr style="width:30%;">
     <a href="https://plaguecraft.xyz/terms" target="_blank">Terms of Use</a> | <a href="https://plaguecraft.xyz/privacy" target="_blank">Privacy Policy</a><br><br>
     &copy; The PlagueCraft Network, All Rights Reserved</p>
 </html>

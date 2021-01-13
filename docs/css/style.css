@@ -73,3 +73,17 @@ a{
   width:20%;
   padding-top:3px 5px;
 }
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  padding: 5px;
+  padding-left
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
